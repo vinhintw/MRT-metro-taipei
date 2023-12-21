@@ -11,9 +11,9 @@ public class Main{
         for (int i = 0; i < myMrt.myData.size(); i++) {
             if ((myMrt.myData.get(i).getStart() == s[0] && myMrt.myData.get(i).getEnd() == s[1]) || (myMrt.myData.get(i).getStart() == s[1] && myMrt.myData.get(i).getEnd() == s[0]) ) {
                 System.out.println(myMrt.myData.get(i));
+                return;
             }
         }
-        Ticket myTicket = myMrt.getTicket(s[0], s[1]);
-        System.out.println(myTicket.toString());
+        
     }    
 }
